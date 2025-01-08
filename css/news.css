@@ -1,0 +1,179 @@
+.newsList .contentBox {
+  padding-top: 0;
+  border-top: #E5E5E5 1px solid;
+}
+.newsList .contentBox .listBox {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.newsList .contentBox .listBox .item {
+  border-bottom: #E5E5E5 1px solid;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+@media screen and (min-width: 500px) {
+  .newsList .contentBox .listBox .item {
+    border-left: #E5E5E5 1px solid;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 500px) {
+  .newsList .contentBox .listBox .item {
+    width: 50%;
+  }
+  .newsList .contentBox .listBox .item:nth-child(2n+1) {
+    border-left: none;
+    padding-right: 30px;
+  }
+  .newsList .contentBox .listBox .item:nth-child(2n+2) {
+    padding-left: 30px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .newsList .contentBox .listBox .item:nth-child(3n+1) {
+    border-left: none;
+    padding-right: 30px;
+    width: calc((100% - 120px) / 3 + 30px);
+  }
+  .newsList .contentBox .listBox .item:nth-child(3n+2) {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: calc((100% - 120px) / 3 + 60px);
+  }
+  .newsList .contentBox .listBox .item:nth-child(3n+3) {
+    padding-left: 30px;
+    width: calc((100% - 120px) / 3 + 30px);
+  }
+}
+.newsList .contentBox .listBox .item:hover .more {
+  opacity: 1;
+}
+.newsList .contentBox .listBox .item:hover .pic img {
+  transform: scale(1.5);
+}
+.newsList .contentBox .listBox a {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 10px;
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 1000px) {
+  .newsList .contentBox .listBox a {
+    flex-direction: column;
+  }
+}
+.newsList .contentBox .listBox .pic {
+  overflow: hidden;
+  margin-bottom: 10px;
+  aspect-ratio: 1;
+}
+.newsList .contentBox .listBox .pic img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 25s ease;
+}
+.newsList .contentBox .listBox .info {
+  display: flex;
+  gap: 20px;
+}
+.newsList .contentBox .listBox .title {
+  font-size: 21px;
+  line-height: 1.2;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  font-weight: 600;
+}
+.newsList .contentBox .listBox time {
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+}
+.newsList .contentBox .listBox .tag {
+  color: #008DB3;
+  font-size: 15px;
+}
+.newsList .contentBox .listBox .description {
+  color: #444444;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.newsList .contentBox .listBox .more {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #008DB3;
+  font-size: 13px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  font-weight: 600;
+}
+.newsList .contentBox .listBox .more::after {
+  content: "";
+  width: 13px;
+  height: 10px;
+  display: block;
+  -webkit-mask: url("../images/icon/icon_arrow_more.svg") center no-repeat;
+          mask: url("../images/icon/icon_arrow_more.svg") center no-repeat;
+  background: #008DB3;
+}
+
+.newsDetail .contentBox .pageTitle {
+  text-align: left;
+  display: flex;
+  gap: 10px;
+  line-height: 1.2;
+  position: relative;
+  padding-left: 30px;
+  font-size: var(--clamp36);
+  font-weight: 600;
+}
+.newsDetail .contentBox .pageTitle::before {
+  content: "";
+  width: 8px;
+  height: 34px;
+  display: block;
+  background: linear-gradient(80deg, rgb(0, 141, 179) 0%, rgb(233, 243, 247) 50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.newsDetail .contentBox .editorOuter {
+  position: relative;
+  isolation: isolate;
+}
+.newsDetail .contentBox .editorOuter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 720px;
+  background: linear-gradient(to bottom, rgb(245, 248, 250) 0%, rgba(245, 248, 250, 0) 100%);
+  z-index: -1;
+}
+.newsDetail .contentBox .content {
+  max-width: 940px;
+  margin: 0 auto;
+}
+.newsDetail .contentBox .info {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+.newsDetail .contentBox time {
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+}
+.newsDetail .contentBox .tag {
+  color: #008DB3;
+  font-size: 15px;
+}/*# sourceMappingURL=news.css.map */

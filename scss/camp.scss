@@ -1,0 +1,28 @@
+// 資料庫
+@import '../scss/partials/shared';
+
+.camp {
+
+  .hasSideOuter {
+    padding-top: 30px;
+    border-top: #E5E5E5 1px solid;
+  }
+
+  .hasSide {
+    display: none !important;
+
+    &.active {
+      display: flex !important;
+    }
+  }
+
+  .contentBox {
+    .content {
+      display: none !important;
+
+      &.active {
+        display: block !important;
+      }
+    }
+  }
+}

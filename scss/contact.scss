@@ -1,0 +1,291 @@
+// 資料庫
+@import '../scss/partials/shared';
+
+.contactPage {
+  .siteMain {
+    padding: 0;
+  }
+
+  section {
+    padding-top: 0px !important;
+    overflow: hidden;
+  }
+
+  .contentBox {
+    display: flex;
+
+    @include screen('tablet') {
+      flex-direction: column;
+    }
+
+    .infoBox {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      position: relative;
+      padding-right: 60px;
+      padding-top: 70px;
+      padding-bottom: 70px;
+
+      @include screen('tablet') {
+        width: 100%;
+        padding-right: 0px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .slogan {
+        font-size: var(--clamp36);
+        font-weight: 500;
+        line-height: 1.4;
+      }
+
+      .notice {
+        font-size: var(--clamp18);
+        border-radius: 10px;
+        border: 1px solid $mainColor;
+        color: $mainColor;
+        padding: 20px;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        li {
+          font-size: var(--clamp18);
+          color: #444444;
+          padding-left: 25px;
+          position: relative;
+
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 4px solid $secColor;
+          }
+        }
+      }
+    }
+  }
+
+  .faqBox {
+    border-top: #E5E5E5 1px solid;
+    padding-top: 40px;
+    margin-top: 20px;
+
+    .title {
+      font-size: var(--clamp24);
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .listBox {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .item {
+        position: relative;
+
+        &.active {
+
+          .qBox {
+            color: #FFF;
+            background: $mainColor;
+
+            &::before {
+              color: #fff;
+            }
+
+            &::after {
+              transform: rotate(-90deg);
+              background: $secColor;
+            }
+          }
+        }
+      }
+    }
+
+    .qBox {
+      width: 100%;
+      text-align: left;
+      background: none;
+      color: #000;
+      font-size: var(--clamp18);
+      display: flex;
+      padding: 18px 50px 18px 80px;
+      position: relative;
+      border: #BFD2DF 1px solid;
+      position: relative;
+      @include transition(all, 0.3);
+
+      &::before {
+        content: 'Q';
+        color: $mainColor;
+        font-size: 34px;
+        font-weight: 600;
+        position: absolute;
+        left: 0px;
+        top: 10px;
+        bottom: 10px;
+        display: block;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include transition(all, 0.3);
+        border-right: #D7E3EB 1px solid;
+      }
+
+      &::after {
+        content: '';
+        width: 13px;
+        height: 10px;
+        display: block;
+        mask: url('../images/icon/icon_arrow_more.svg') center no-repeat;
+        background: $mainColor;
+        position: absolute;
+        transform: rotate(90deg);
+        right: 20px;
+        top: 24px;
+      }
+    }
+
+    .aBox {
+      font-size: var(--clamp18);
+      color: #444444;
+      display: none;
+      padding: 20px;
+      background: #F5F8FA;
+      border: #BFD2DF 1px solid;
+    }
+  }
+
+  .formBox {
+    width: 50%;
+    position: relative;
+    padding-left: 60px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    isolation: isolate;
+
+    @include screen('tablet') {
+      width: 100%;
+      padding-left: 0px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 250%;
+      background: #F5F8FA;
+      z-index: -1;
+
+      @include screen('tablet') {
+        left: calc(var(--contentPadding) * -1);
+      }
+    }
+
+    .slogan {
+      color: $mainColor;
+      font-size: var(--clamp28);
+    }
+
+    .description {
+      color: #444;
+      font-size: var(--clamp18);
+    }
+
+    .title {
+      font-size: var(--clamp24);
+      font-weight: 600;
+    }
+  }
+
+  .pageBtnBox {
+    margin-top: 20px;
+
+    .send {
+      width: 100%;
+    }
+  }
+}
+
+
+.contactOk section {
+  padding: 80px 0 0;
+  text-align: center;
+
+  .title {
+    max-width: 570px;
+    margin: 0 auto;
+    line-height: 1.2;
+    font-size: Rem(48);
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+
+    @include screen('tablet') {
+      font-size: Rem(36);
+    }
+
+    @include screen('mobile') {
+      font-size: Rem(24);
+    }
+
+  }
+
+  .unitTitleBox {
+    .title {
+      &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 60px;
+        height: 5px;
+        transform: translateX(-50%);
+        display: block;
+        background: $secColor;
+      }
+    }
+  }
+
+  .txt {
+    color: #333333;
+    font-size: Rem(18);
+
+    @include screen('tablet') {
+      font-size: Rem(16);
+    }
+  }
+
+  .subTitle {
+    color: $mainColor;
+    font-weight: 700;
+    font-size: Rem(28);
+    margin-bottom: clamp(20px, 5%, 50px);
+
+    @include screen('tablet') {
+      font-size: Rem(24);
+    }
+
+    @include screen('mobile') {
+      font-size: Rem(20);
+    }
+  }
+}

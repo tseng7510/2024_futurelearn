@@ -1,0 +1,31 @@
+//-------------------------------------------------------------顏色---------//
+// 定義顏色 此顏色可自由變換
+$mainColor: #008DB3; //主色
+$secColor: #FFAE00; //輔色'
+$thirdColor: #FFC814; //輔色
+$lightColor: #FAED00; //點綴
+$linkColor: #00ffff; //連結
+$importantColor: #e50012; //重要
+
+$mainFontColor: #130A06; //一般字的顏色
+$activeColor: #000;
+
+//-------------------------------------------------------------字型--------//
+
+// 字型設定
+$arial: Arial, '微軟正黑體', 'Microsoft JhengHei', '蘋果儷中黑', 'Apple LiGothic Medium', sans-serif;
+$opensans: 'Open Sans', 'Noto Sans TC', Arial, '微軟正黑體', 'Microsoft JhengHei', '蘋果儷中黑', 'Apple LiGothic Medium', sans-serif;
+$Khand: 'Khand', 'Noto Sans TC', Arial, '微軟正黑體', 'Microsoft JhengHei', '蘋果儷中黑', 'Apple LiGothic Medium', sans-serif;
+$Roboto: 'Roboto', 'Noto Sans TC', Arial, '微軟正黑體', 'Microsoft JhengHei', '蘋果儷中黑', 'Apple LiGothic Medium', sans-serif;
+$Lato: 'Lato', 'Noto Sans TC', Arial, '微軟正黑體', 'Microsoft JhengHei', '蘋果儷中黑', 'Apple LiGothic Medium', sans-serif;
+
+//-------------------------------------------------------------版面------//
+@mixin fontFace {
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+$mainFontSize: 16;
+$domWidth: 1200px;

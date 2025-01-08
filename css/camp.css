@@ -1,0 +1,16 @@
+.camp .hasSideOuter {
+  padding-top: 30px;
+  border-top: #E5E5E5 1px solid;
+}
+.camp .hasSide {
+  display: none !important;
+}
+.camp .hasSide.active {
+  display: flex !important;
+}
+.camp .contentBox .content {
+  display: none !important;
+}
+.camp .contentBox .content.active {
+  display: block !important;
+}/*# sourceMappingURL=camp.css.map */
