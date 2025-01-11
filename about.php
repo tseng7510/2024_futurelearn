@@ -235,30 +235,21 @@
     gsap.registerPlugin(ScrollTrigger)
     const contentTopNavBtn = document.querySelectorAll('.contentTopNav a');
 
-    const block1 = document.querySelector('.block1');
-    const blockTop = block1.getBoundingClientRect().top;
-
-    window.addEventListener('resize', () => blockTop = block1.getBoundingClientRect().top);
-
-    const block = gsap.utils.toArray('.block');
-    block.forEach(box => {
-      gsap.to(box, {
-        scrollTrigger: {
-          trigger: box,
-          toggleClass: "active",
-          start: `-${blockTop - 50} center`,
-          end: `bottom center`,
-          scrub: true,
-          onEnter: myEnterFunc,
-          onEnterBack: myEnterFunc,
-        }
-      })
+    gsap.utils.toArray(".block").forEach(box => {
+      ScrollTrigger.create({
+        trigger: box,
+        start: "-=200 top",
+        end: "bottom center",
+        onEnter: myEnterFunc,
+        onEnterBack: myEnterFunc,
+      });
     });
 
     function myEnterFunc(value) {
-      const index = value.vars.trigger.childElementCount;
+      const blockName = value.trigger.id;
+      const number = Number(blockName.match(/\d+/)[0]);
       contentTopNavBtn.forEach((value, index) => value.parentNode.classList.remove('active'));
-      contentTopNavBtn[index - 1].parentNode.classList.add('active');
+      contentTopNavBtn[number - 1].parentNode.classList.add('active');
     }
   </script>
 </body>

@@ -125,6 +125,10 @@
 .resourcesDetail .contentBox .item a:hover .info::after {
   opacity: 1;
 }
+.resourcesDetail .contentBox .item .pic {
+  aspect-ratio: 311/208;
+  overflow: hidden;
+}
 .resourcesDetail .contentBox .item .pic img {
   transition: all 15s ease;
 }/*# sourceMappingURL=resources.css.map */

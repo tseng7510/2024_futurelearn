@@ -67,7 +67,7 @@
 
               <div class="contentBox">
                 <h1 class="pageTitle wow fadeInUp" data-wow-delay="0.2s">國際教育交流</h1>
-                <div class="editorOuter">
+                <div class="editorOuter wow fadeInUp" data-wow-delay="0.4s">
                   <div class="editor">
                     <div class="block wow fadeInUp" data-wow-delay="0.4s">
                       <h2 class="title">線上主題交流</h2>

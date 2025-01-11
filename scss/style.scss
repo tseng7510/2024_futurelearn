@@ -92,7 +92,7 @@
 
   @include screen('tablet') {
     position: fixed;
-    top: 0;
+    top: -1;
     left: 0;
     width: 100%;
     background: #fff;
@@ -497,8 +497,8 @@
       gap: 50px;
     }
 
-    &.active {
-      .sideBox {
+    .sideBox {
+      &.active {
         & > button {
           background: $secColor;
 
@@ -589,6 +589,7 @@
             color: #666666;
             position: relative;
             isolation: isolate;
+            line-height: 1.75;
 
             @include screen('tablet') {
               text-align: center;
@@ -746,24 +747,22 @@
 
           @include screen('tablet') {
             font-size: Rem(18);
-          }
-
-          @include screen('mobile') {
-            // color: $mainColor;
             padding: 15px 40px;
             border-bottom: #e3e3e3 1px solid;
-
-
-            // &:hover,
-            // &.active {
-            //   color: #FFF;
-            //   background: $mainColor;
-
-            //   &::before {
-            //     width: 100%;
-            //   }
-            // }
           }
+
+          // @include screen('mobile') {
+          // color: $mainColor;
+          // &:hover,
+          // &.active {
+          //   color: #FFF;
+          //   background: $mainColor;
+
+          //   &::before {
+          //     width: 100%;
+          //   }
+          // }
+          // }
 
           // @include screen('tabletMin') {
           //   &::before {
@@ -1455,15 +1454,13 @@
   }
 
   .shareBox {
+    width: 100%;
+    max-width: 290px;
+    margin: 0 auto;
+
     ul {
       display: flex;
       justify-content: space-between;
-
-      @include screen('tablet') {
-        gap: 20px;
-        justify-content: center;
-      }
-
 
       a {
         display: flex;
@@ -1491,16 +1488,13 @@
         &:hover {
 
           &::before {
-            // background: $secColor;
-            opacity: 0.8;
+            background: $secColor;
           }
         }
       }
 
       li .facebook::before {
-        // mask: url('../images/icon/icon_facebook.svg') center no-repeat;
-        background: url('../images/icon/icon_facebook.png');
-        background-size: contain;
+        mask: url('../images/icon/icon_facebook.svg') center no-repeat;
       }
 
       li .line::before {
@@ -1523,9 +1517,7 @@
       }
 
       li .youtube::before {
-        // mask: url('../images/icon/icon_youtube.svg') center no-repeat;
-        background: url('../images/icon/icon_youtube.png');
-        background-size: contain;
+        mask: url('../images/icon/icon_youtube.svg') center no-repeat;
       }
 
       li .instagram::before {
@@ -1547,6 +1539,11 @@
       display: flex;
       flex-direction: column;
       gap: 15px;
+
+      @include screen('tablet') {
+        max-width: 290px;
+        margin: 0 auto;
+      }
 
       li {
         display: flex;
@@ -1683,6 +1680,7 @@
       margin: 0 calc(var(--contentPadding) * -1);
       padding: 20px;
       background: url('../images/fbg.jpg') top center repeat;
+      text-align: center;
     }
 
     a {
@@ -1749,6 +1747,7 @@
         @include screen('tablet') {
           width: 30px;
           height: 30px;
+          line-height: 30px;
           font-size: Rem(16);
         }
 
@@ -1872,6 +1871,10 @@
     // margin: 0 auto;
     gap: 17px;
 
+    @include screen('mobile') {
+      gap: 35px;
+    }
+
     & + ul {
       padding-top: 40px;
       border-top: 1px solid $mainColor;
@@ -1889,6 +1892,7 @@
     width: calc(50% - 25px);
     position: relative;
     display: flex;
+    gap: 15px;
     // flex-direction: column;
     align-items: center;
     // border-bottom: 1px solid #dddddd;
@@ -2116,11 +2120,12 @@
   }
 
   .checkImg {
-    position: absolute;
-    bottom: 12px;
+    // position: absolute;
+    // bottom: 12px;
     // transform: translateY(-50%);
-    right: 50px;
+    // right: 50px;
     line-height: 0;
+    flex-shrink: 0;
     // margin-top: 10px;
   }
 
@@ -2128,11 +2133,12 @@
     width: 15px;
     height: 15px;
     // margin-top: 10px;
-    bottom: 16px;
+    // bottom: 16px;
     // transform: translateY(-50%);
-    right: 15px;
+    // right: 15px;
     z-index: 2;
-    position: absolute;
+    // position: absolute;
+    position: relative;
     cursor: pointer;
     background: none;
 
@@ -2235,7 +2241,7 @@
 .floatNav {
   position: fixed;
   right: 10px;
-  bottom: 10px;
+  bottom: 15%;
   z-index: 9;
 
   a {
@@ -2256,10 +2262,16 @@
       display: block;
       mask: url('../images/icon/icon_line.svg') center no-repeat;
       background: #fff;
+      @include transition(all, 0.3);
     }
 
     &:hover {
       box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+
+      &::before {
+        width: 30px;
+        height: 30px;
+      }
     }
   }
 }

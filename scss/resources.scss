@@ -181,6 +181,9 @@
       }
 
       .pic {
+        aspect-ratio: 311/208;
+        overflow: hidden;
+
         img {
           @include transition(all, 15);
         }

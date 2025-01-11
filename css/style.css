@@ -692,6 +692,7 @@ button:focus {
 }
 
 .mfp-zoom-out-cur {
+  overflow: hidden;
   cursor: auto;
 }
 .mfp-zoom-out-cur .mfp-container {
@@ -700,7 +701,9 @@ button:focus {
   justify-content: center;
 }
 .mfp-zoom-out-cur .mfp-img {
+  max-width: 964px;
   padding-top: 0;
+  max-height: 80vh !important;
 }
 .mfp-zoom-out-cur .mfp-counter {
   display: none;
@@ -833,7 +836,7 @@ button:focus {
 @media screen and (max-width: 1000px) {
   .siteHeader {
     position: fixed;
-    top: 0;
+    top: -1;
     left: 0;
     width: 100%;
     background: #fff;
@@ -1200,13 +1203,13 @@ button:focus {
     gap: 50px;
   }
 }
-.insidePages .hasSide.active .sideBox > button {
+.insidePages .hasSide .sideBox.active > button {
   background: #FFAE00;
 }
-.insidePages .hasSide.active .sideBox > button::after {
+.insidePages .hasSide .sideBox.active > button::after {
   transform: translateY(40%) rotate(225deg);
 }
-.insidePages .hasSide.active .sideBox ul {
+.insidePages .hasSide .sideBox.active ul {
   border-color: #FFAE00;
 }
 .insidePages .hasSide .sideBox {
@@ -1281,6 +1284,7 @@ button:focus {
   color: #666666;
   position: relative;
   isolation: isolate;
+  line-height: 1.75;
 }
 @media screen and (max-width: 1000px) {
   .insidePages .hasSide .sideBox ul li a,
@@ -1427,10 +1431,6 @@ button:focus {
 @media screen and (max-width: 1000px) {
   .menuBox .mainMenu > ul > li > a, .menuBox .mainMenu > ul > li > button {
     font-size: 1.125rem;
-  }
-}
-@media screen and (max-width: 767px) {
-  .menuBox .mainMenu > ul > li > a, .menuBox .mainMenu > ul > li > button {
     padding: 15px 40px;
     border-bottom: #e3e3e3 1px solid;
   }
@@ -2045,15 +2045,14 @@ button:focus {
 .footerBox .logo {
   text-align: center;
 }
+.footerBox .shareBox {
+  width: 100%;
+  max-width: 290px;
+  margin: 0 auto;
+}
 .footerBox .shareBox ul {
   display: flex;
   justify-content: space-between;
-}
-@media screen and (max-width: 1000px) {
-  .footerBox .shareBox ul {
-    gap: 40px;
-    justify-content: center;
-  }
 }
 .footerBox .shareBox ul a {
   display: flex;
@@ -2079,11 +2078,11 @@ button:focus {
   transition: all 0.3s ease;
 }
 .footerBox .shareBox ul a:hover::before {
-  opacity: 0.8;
+  background: #FFAE00;
 }
 .footerBox .shareBox ul li .facebook::before {
-  background: url("../images/icon/icon_facebook.png");
-  background-size: contain;
+  -webkit-mask: url("../images/icon/icon_facebook.svg") center no-repeat;
+          mask: url("../images/icon/icon_facebook.svg") center no-repeat;
 }
 .footerBox .shareBox ul li .line::before {
   -webkit-mask: url("../images/icon/icon_line.svg") center no-repeat;
@@ -2106,8 +2105,8 @@ button:focus {
           mask: url("../images/icon/icon_whatsapp.svg") center no-repeat;
 }
 .footerBox .shareBox ul li .youtube::before {
-  background: url("../images/icon/icon_youtube.png");
-  background-size: contain;
+  -webkit-mask: url("../images/icon/icon_youtube.svg") center no-repeat;
+          mask: url("../images/icon/icon_youtube.svg") center no-repeat;
 }
 .footerBox .shareBox ul li .instagram::before {
   -webkit-mask: url("../images/icon/icon_instagram.svg") center no-repeat;
@@ -2120,13 +2119,19 @@ button:focus {
 }
 @media screen and (max-width: 1000px) {
   .footerBox .infoBox {
-    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    border-top: 1px solid rgba(0, 141, 179, 0.35);
   }
 }
 .footerBox .infoBox ul {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+@media screen and (max-width: 1000px) {
+  .footerBox .infoBox ul {
+    max-width: 290px;
+    margin: 0 auto;
+  }
 }
 .footerBox .infoBox ul li {
   display: flex;
@@ -2235,6 +2240,7 @@ button:focus {
     margin: 0 calc(var(--contentPadding) * -1);
     padding: 20px;
     background: url("../images/fbg.jpg") top center repeat;
+    text-align: center;
   }
 }
 .footerBox .copyright a {
@@ -2299,6 +2305,7 @@ button:focus {
   .pageBox .pagination li a {
     width: 30px;
     height: 30px;
+    line-height: 30px;
     font-size: 1rem;
   }
 }
@@ -2399,6 +2406,11 @@ button:focus {
   justify-content: space-between;
   gap: 17px;
 }
+@media screen and (max-width: 767px) {
+  .formBox ul {
+    gap: 35px;
+  }
+}
 .formBox ul + ul {
   padding-top: 40px;
   border-top: 1px solid #008DB3;
@@ -2411,6 +2423,7 @@ button:focus {
   width: calc(50% - 25px);
   position: relative;
   display: flex;
+  gap: 15px;
   align-items: center;
 }
 @media screen and (max-width: 767px) {
@@ -2609,18 +2622,14 @@ button:focus {
   color: #FFAE00;
 }
 .formBox .checkImg {
-  position: absolute;
-  bottom: 12px;
-  right: 50px;
   line-height: 0;
+  flex-shrink: 0;
 }
 .formBox .reBtn {
   width: 15px;
   height: 15px;
-  bottom: 16px;
-  right: 15px;
   z-index: 2;
-  position: absolute;
+  position: relative;
   cursor: pointer;
   background: none;
 }
@@ -2716,7 +2725,7 @@ button:focus {
 .floatNav {
   position: fixed;
   right: 10px;
-  bottom: 10px;
+  bottom: 15%;
   z-index: 9;
 }
 .floatNav a {
@@ -2738,9 +2747,14 @@ button:focus {
   -webkit-mask: url("../images/icon/icon_line.svg") center no-repeat;
           mask: url("../images/icon/icon_line.svg") center no-repeat;
   background: #fff;
+  transition: all 0.3s ease;
 }
 .floatNav a:hover {
   box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.floatNav a:hover::before {
+  width: 30px;
+  height: 30px;
 }
 
 .lightBoxActive {

@@ -16,10 +16,8 @@ body.loaded .indexVideo {
   transition: all 2s ease;
 }
 .indexVideo.active {
-  transform: scale(25);
-}
-.indexVideo.loaded {
   opacity: 0;
+  transform: scale(2);
 }
 .indexVideo video {
   width: 100%;
@@ -226,12 +224,11 @@ section .blockTitle span {
 }
 .newsBox .listBox .swiper-slide {
   padding: 0px;
-    border-left:none;
+  border-left: #E5E5E5 1px solid;
 }
 @media screen and (min-width: 768px) {
   .newsBox .listBox .swiper-slide {
     padding: 90px 40px;
-  border-left: #E5E5E5 1px solid;
   }
 }
 .newsBox .listBox .pic {
@@ -373,9 +370,9 @@ section .blockTitle span {
   inset: 0;
   display: block;
   background: repeating-linear-gradient(to right, #008db3 0%, #ffae00 25%, #008db3 50%);
-  background-size: 400%;
+  background-size: 200%;
   mix-blend-mode: multiply;
-  animation: beforeUse 20s linear infinite;
+  animation: beforeUse 10s linear infinite;
 }
 @keyframes beforeUse {
   0% {

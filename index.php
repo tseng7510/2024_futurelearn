@@ -16,7 +16,7 @@
 
     <main class="siteMain" aria-label="main" itemscope>
 
-      <div class="indexVideo"><video src="images/index/logolading.mp4" autoplay muted playsinline></video></div>
+      <!-- <div class="indexVideo"><video src="images/index/logolading.mp4" autoplay muted playsinline controls></video></div> -->
 
       <div class="mainBox">
         <div class="banner">
@@ -25,7 +25,7 @@
               <div class="swiper-slide">
                 <div class="pic">
                   <picture>
-                    <source srcset="images/mbanner.png" media="(max-width: 375px)" />
+                    <source srcset="images/mbanner.png" media="(max-width: 768px)" />
                     <img src="images/index/banner.jpg" alt="">
                   </picture>
                 </div>
@@ -128,19 +128,19 @@
       },
     });
 
-    window.addEventListener("load", (e) => {
-      const body = document.querySelector('body');
-      const indexVideo = document.querySelector('.indexVideo');
-      const video = document.querySelector('.indexVideo video');
-      setTimeout(() => {
-        indexVideo.classList.add('active');
-        body.classList.add('loaded');
-        setTimeout(() => {
-          indexVideo.classList.add('loaded');
-          //indexVideo.remove();
-        }, 1000);
-      }, 4000);
-    });
+    // window.addEventListener("load", (e) => {
+    //   const body = document.querySelector('body');
+    //   const indexVideo = document.querySelector('.indexVideo');
+    //   const video = document.querySelector('.indexVideo video');
+    //   setTimeout(() => {
+    //     indexVideo.classList.add('active');
+    //     body.classList.add('loaded');
+    //     setTimeout(() => {
+    //       indexVideo.classList.add('loaded');
+    //       //indexVideo.remove();
+    //     }, 1000);
+    //   }, 4000);
+    // });
   </script>
 </body>
 

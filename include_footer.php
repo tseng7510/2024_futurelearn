@@ -2,10 +2,10 @@
   <div class="outer">
     <div class="container">
       <div class="footerSide">
-        <div class="logo">
+        <div class="logo wow fadeInUp" data-wow-delay="0s">
           <img src="images/flogo.png" alt="學無界 FUTURELEARN" />
         </div>
-        <div class="shareBox">
+        <div class="shareBox wow fadeInUp" data-wow-delay="0.2s">
           <ul>
             <li>
               <a href="https://www.facebook.com/CJSHSID " target="_blank" class="facebook"></a>
@@ -21,7 +21,7 @@
             </li>
           </ul>
         </div>
-        <div class="infoBox">
+        <div class="infoBox wow fadeInUp" data-wow-delay="0.4s">
           <ul>
             <li class="address">717台南市仁德區裕華三街353號</li>
             <li class="tel"><a href="tel:062086800 ">06-2086800 </a></li>

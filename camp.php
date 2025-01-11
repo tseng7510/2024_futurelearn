@@ -68,7 +68,7 @@
           <div class="outer">
             <div class="container">
               <div class="hasSideOuter">
-                <div class="hasSide active">
+                <div class="hasSide active wow fadeInUp" data-wow-delay="0s">
                   <aside class="sideBox">
                     <button type="button"><span>Menu</span></button>
                     <div class="content">
@@ -78,18 +78,18 @@
                       </ul>
                     </div>
                   </aside>
-                  <div class="contentBox">
+                  <div class="contentBox wow fadeInUp" data-wow-delay="0.2s">
                     <div class="content active">
                       <h1 class="pageTitle">暑期英語大冒險</h1>
-                      <div class="editorOuter">
+                      <div class="editorOuter wow fadeInUp" data-wow-delay="0.4s">
                         <div class="editor">讓孩子愛上英語的暑假大冒險，每年暑假我們提供了情境式英語學習，半日多元主題活動，全日戶外探索體驗等豬業課程。招收對象：小五～高中一年級<br /><br /><br />
                           <img src="images/in/c.jpg" alt="">
                         </div>
                       </div>
                     </div>
                     <div class="content">
-                      <h1 class="pageTitle">暑期雅思</h1>
-                      <div class="editorOuter">
+                      <h1 class="pageTitle wow fadeInUp" data-wow-delay="0.2s">暑期雅思</h1>
+                      <div class="editorOuter wow fadeInUp" data-wow-delay="0.4s">
                         <div class="editor">讓孩子愛上英語的暑假大冒險，每年暑假我們提供了情境式英語學習，半日多元主題活動，全日戶外探索體驗等豬業課程。招收對象：小五～高中一年級<br /><br /><br />
                           <img src="images/in/c.jpg" alt="">
                         </div>
@@ -109,16 +109,16 @@
                   </aside>
                   <div class="contentBox">
                     <div class="content active">
-                      <h1 class="pageTitle">暑期英語大冒險2</h1>
-                      <div class="editorOuter">
+                      <h1 class="pageTitle wow fadeInUp" data-wow-delay="0.2s">暑期英語大冒險2</h1>
+                      <div class="editorOuter wow fadeInUp" data-wow-delay="0.4s">
                         <div class="editor">讓孩子愛上英語的暑假大冒險，每年暑假我們提供了情境式英語學習，半日多元主題活動，全日戶外探索體驗等豬業課程。招收對象：小五～高中一年級<br /><br /><br />
                           <img src="images/in/c.jpg" alt="">
                         </div>
                       </div>
                     </div>
                     <div class="content">
-                      <h1 class="pageTitle">暑期雅思2</h1>
-                      <div class="editorOuter">
+                      <h1 class="pageTitle wow fadeInUp" data-wow-delay="0.2s">暑期雅思2</h1>
+                      <div class="editorOuter wow fadeInUp" data-wow-delay="0.4s">
                         <div class="editor">讓孩子愛上英語的暑假大冒險，每年暑假我們提供了情境式英語學習，半日多元主題活動，全日戶外探索體驗等豬業課程。招收對象：小五～高中一年級<br /><br /><br />
                           <img src="images/in/c.jpg" alt="">
                         </div>
@@ -138,16 +138,16 @@
                   </aside>
                   <div class="contentBox">
                     <div class="content active">
-                      <h1 class="pageTitle">暑期英語大冒險3</h1>
-                      <div class="editorOuter">
+                      <h1 class="pageTitle wow fadeInUp" data-wow-delay="0.2s">暑期英語大冒險3</h1>
+                      <div class="editorOuter wow fadeInUp" data-wow-delay="0.4s">
                         <div class="editor">讓孩子愛上英語的暑假大冒險，每年暑假我們提供了情境式英語學習，半日多元主題活動，全日戶外探索體驗等豬業課程。招收對象：小五～高中一年級<br /><br /><br />
                           <img src="images/in/c.jpg" alt="">
                         </div>
                       </div>
                     </div>
                     <div class="content">
-                      <h1 class="pageTitle">暑期雅思3</h1>
-                      <div class="editorOuter">
+                      <h1 class="pageTitle wow fadeInUp" data-wow-delay="0.2s">暑期雅思3</h1>
+                      <div class="editorOuter wow fadeInUp" data-wow-delay="0.4s">
                         <div class="editor">讓孩子愛上英語的暑假大冒險，每年暑假我們提供了情境式英語學習，半日多元主題活動，全日戶外探索體驗等豬業課程。招收對象：小五～高中一年級<br /><br /><br />
                           <img src="images/in/c.jpg" alt="">
                         </div>
@@ -167,16 +167,16 @@
                   </aside>
                   <div class="contentBox">
                     <div class="content active">
-                      <h1 class="pageTitle">暑期英語大冒險4</h1>
-                      <div class="editorOuter">
+                      <h1 class="pageTitle wow fadeInUp" data-wow-delay="0.2s">暑期英語大冒險4</h1>
+                      <div class="editorOuter wow fadeInUp" data-wow-delay="0.4s">
                         <div class="editor">讓孩子愛上英語的暑假大冒險，每年暑假我們提供了情境式英語學習，半日多元主題活動，全日戶外探索體驗等豬業課程。招收對象：小五～高中一年級<br /><br /><br />
                           <img src="images/in/c.jpg" alt="">
                         </div>
                       </div>
                     </div>
                     <div class="content">
-                      <h1 class="pageTitle">暑期雅思4</h1>
-                      <div class="editorOuter">
+                      <h1 class="pageTitle wow fadeInUp" data-wow-delay="0.2s">暑期雅思4</h1>
+                      <div class="editorOuter wow fadeInUp" data-wow-delay="0.4s">
                         <div class="editor">讓孩子愛上英語的暑假大冒險，每年暑假我們提供了情境式英語學習，半日多元主題活動，全日戶外探索體驗等豬業課程。招收對象：小五～高中一年級<br /><br /><br />
                           <img src="images/in/c.jpg" alt="">
                         </div>
@@ -196,16 +196,16 @@
                   </aside>
                   <div class="contentBox">
                     <div class="content active">
-                      <h1 class="pageTitle">暑期英語大冒險5</h1>
-                      <div class="editorOuter">
+                      <h1 class="pageTitle wow fadeInUp" data-wow-delay="0.2s">暑期英語大冒險5</h1>
+                      <div class="editorOuter wow fadeInUp" data-wow-delay="0.4s">
                         <div class="editor">讓孩子愛上英語的暑假大冒險，每年暑假我們提供了情境式英語學習，半日多元主題活動，全日戶外探索體驗等豬業課程。招收對象：小五～高中一年級<br /><br /><br />
                           <img src="images/in/c.jpg" alt="">
                         </div>
                       </div>
                     </div>
                     <div class="content">
-                      <h1 class="pageTitle">暑期雅思5</h1>
-                      <div class="editorOuter">
+                      <h1 class="pageTitle wow fadeInUp" data-wow-delay="0.2s">暑期雅思5</h1>
+                      <div class="editorOuter wow fadeInUp" data-wow-delay="0.4s">
                         <div class="editor">讓孩子愛上英語的暑假大冒險，每年暑假我們提供了情境式英語學習，半日多元主題活動，全日戶外探索體驗等豬業課程。招收對象：小五～高中一年級<br /><br /><br />
                           <img src="images/in/c.jpg" alt="">
                         </div>
@@ -230,6 +230,8 @@
   <?php include('include_body_bottom.php'); ?>
   <script type="text/javascript">
     const contentTopNav = document.querySelectorAll('.contentTopNav button');
+    const sideBox = document.querySelectorAll('.hasSideOuter .hasSide .sideBox');
+    const content = document.querySelectorAll('.hasSideOuter .hasSide .sideBox .content');
     const sideBoxContent = document.querySelectorAll('.hasSideOuter .hasSide');
 
     contentTopNav.forEach((item, index) => {
@@ -245,6 +247,8 @@
           return child !== sideBoxContent[index];
         });
         contentSiblings.forEach((value) => value.classList.remove('active'));
+        sideBox.forEach((value) => value.classList.remove('active'));
+        content.forEach((value) => value.removeAttribute('style'));
         sideBoxContent[index].classList.add('active');
       });
     });

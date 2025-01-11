@@ -387,6 +387,7 @@ button {
 }
 
 .mfp-zoom-out-cur {
+  overflow: hidden;
   cursor: auto;
 
   .mfp-container {
@@ -396,7 +397,9 @@ button {
   }
 
   .mfp-img {
+    max-width: 964px;
     padding-top: 0;
+    max-height: 80vh !important;
   }
 
   .mfp-counter {

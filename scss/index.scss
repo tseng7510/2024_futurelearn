@@ -406,9 +406,9 @@ section {
       inset: 0;
       display: block;
       background: repeating-linear-gradient(to right, rgba($mainColor, 1) 0%, rgba($secColor, 1) 25%, rgba($mainColor, 1) 50%);
-      background-size: 400%;
+      background-size: 200%;
       mix-blend-mode: multiply;
-      animation: beforeUse 20s linear infinite;
+      animation: beforeUse 10s linear infinite;
     }
 
     @keyframes beforeUse {
