@@ -186,6 +186,7 @@
 
         img {
           @include transition(all, 15);
+          object-fit: cover;
         }
       }
     }

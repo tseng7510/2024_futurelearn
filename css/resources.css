@@ -131,4 +131,6 @@
 }
 .resourcesDetail .contentBox .item .pic img {
   transition: all 15s ease;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=resources.css.map */
