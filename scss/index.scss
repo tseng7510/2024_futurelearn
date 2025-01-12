@@ -2,7 +2,6 @@
 @use '../scss/partials/shared' as *;
 
 body {
-  overflow: hidden;
 
   &.loaded {
     overflow: visible;

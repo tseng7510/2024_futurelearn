@@ -1,6 +1,3 @@
-body {
-  overflow: hidden;
-}
 body.loaded {
   overflow: visible;
 }
