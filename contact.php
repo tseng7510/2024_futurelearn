@@ -49,7 +49,7 @@
                 <div class="infoBox">
                   <div class="slogan wow fadeInUp" data-wow-delay="0.2s">學無界實踐教育機構，和世界接軌的教育專家！</div>
                   <div class="notice wow fadeInUp" data-wow-delay="0.4s">我們是唯一獲得「英國劍橋大學國際考評部」、「英國牛津大學國際AQA考試院」、「英國文化協會全球夥伴學校」等三項國際認證的學校。</div>
-                  <ul>
+                  <ul class="wow fadeInUp" data-wow-delay="0.6s">
                     <li>我們除國內課程外，全面採外師授課。</li>
                     <li>在沉浸式的英語學習環境中，培養英語聽說讀寫能力。</li>
                     <li>國中畢業後英語能力可達雅思5.0~6.0分，相當全民英檢中高級。</li>
@@ -57,7 +57,7 @@
                     <li>豐富的國際教育資源，透過寒暑假海外遊學體驗營和各種國際交流活動的參與，提升英語溝通能力。</li>
                   </ul>
 
-                  <div class="faqBox wow fadeInUp" data-wow-delay="0.6s">
+                  <div class="faqBox wow fadeInUp" data-wow-delay="0.8s">
                     <div class="title">諮詢FAQ</div>
                     <div class="listBox">
 
@@ -176,9 +176,11 @@
                     </li>
                     <li class="inputItem full wow fadeInUp required">
                       <label class="label" for="password">驗證碼</label>
-                      <input type="password" class="inputControl" id="password">
-                      <span class="checkImg"><img src="images/check_img.jpg"></span>
-                      <button class="reBtn"></button>
+                      <div class="box">
+                        <input type="password" class="inputControl" id="password">
+                        <span class="checkImg"><img src="images/check_img.jpg"></span>
+                        <button class="reBtn"></button>
+                      </div>
                     </li>
                   </ul>
                   <div class="pageBtnBox wow fadeInUp">

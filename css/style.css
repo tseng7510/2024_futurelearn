@@ -700,9 +700,21 @@ button:focus {
   align-items: center;
   justify-content: center;
 }
-.mfp-zoom-out-cur .mfp-img {
+@media (max-width: 900px) {
+  .mfp-zoom-out-cur .mfp-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.mfp-zoom-out-cur .mfp-figure::after {
+  top: 0;
+  bottom: 0;
+}
+.mfp-zoom-out-cur .mfp-figure figure {
   max-width: 964px;
-  padding-top: 0;
+}
+.mfp-zoom-out-cur .mfp-img {
+  padding: 0;
   max-height: 80vh !important;
 }
 .mfp-zoom-out-cur .mfp-counter {
@@ -1797,7 +1809,7 @@ button:focus {
 }
 @media screen and (max-width: 1000px) {
   .topNav .language ul {
-    width: 120px;
+    width: 60px;
   }
 }
 
@@ -2039,7 +2051,6 @@ button:focus {
 @media screen and (max-width: 1000px) {
   .footerBox .footerSide {
     max-width: none;
-    padding: 0 20px;
   }
 }
 .footerBox .logo {
@@ -2119,7 +2130,7 @@ button:focus {
 }
 @media screen and (max-width: 1000px) {
   .footerBox .infoBox {
-    border-top: 1px solid rgba(0, 141, 179, 0.35);
+    border-top: 1px solid rgba(255, 255, 255, 0.35);
   }
 }
 .footerBox .infoBox ul {
@@ -2750,6 +2761,8 @@ button:focus {
   transition: all 0.3s ease;
 }
 .floatNav a:hover {
+  width: 54px;
+  height: 54px;
   box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
 .floatNav a:hover::before {

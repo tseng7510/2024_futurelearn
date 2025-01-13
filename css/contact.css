@@ -64,6 +64,13 @@
   border-radius: 50%;
   border: 4px solid #FFAE00;
 }
+.contactPage .contentBox .inputItem .box {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
 .contactPage .faqBox {
   border-top: #E5E5E5 1px solid;
   padding-top: 40px;

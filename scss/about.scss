@@ -118,6 +118,7 @@
       color: transparent;
       -webkit-text-stroke: 1.5px #BFD2DF;
       padding-top: 50px;
+      font-family: $arial;
 
       @include screen('tablet') {
         font-size: 8vw;

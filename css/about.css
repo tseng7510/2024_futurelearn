@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .aboutPage .siteMain {
   padding-bottom: 0;
 }
@@ -100,6 +101,7 @@
   color: transparent;
   -webkit-text-stroke: 1.5px #BFD2DF;
   padding-top: 50px;
+  font-family: Arial, "微軟正黑體", "Microsoft JhengHei", "蘋果儷中黑", "Apple LiGothic Medium", sans-serif;
 }
 @media screen and (max-width: 1000px) {
   .aboutPage .block2 .font {

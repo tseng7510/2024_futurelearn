@@ -394,11 +394,26 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 900px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .mfp-figure {
+    &::after {
+      top: 0;
+      bottom: 0;
+    }
+
+    figure {
+      max-width: 964px;
+    }
   }
 
   .mfp-img {
-    max-width: 964px;
-    padding-top: 0;
+    padding: 0;
     max-height: 80vh !important;
   }
 

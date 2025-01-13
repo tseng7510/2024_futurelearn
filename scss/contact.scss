@@ -73,6 +73,16 @@
         }
       }
     }
+
+    .inputItem {
+      .box {
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+    }
   }
 
   .faqBox {

@@ -54,9 +54,9 @@
               <div class="container">
                 <nav class="wow fadeInUp" data-wow-delay="0s">
                   <ul>
-                    <li class="active"><a href="#block1">願景與使命</a></li>
-                    <li><a href="#block2">實驗教育</a></li>
-                    <li><a href="#block3">耶拿教育與精神</a></li>
+                    <li class="active"><button type="button">願景與使命</button></li>
+                    <li><button type="button">實驗教育</button></li>
+                    <li><button type="button">耶拿教育與精神</button></li>
                   </ul>
                 </nav>
               </div>
@@ -232,8 +232,27 @@
 
     sliderUse('.block2 .picBox')
 
+
+
+
+    const contentTopNavBtn = document.querySelectorAll('.contentTopNav button');
+    const block = document.querySelectorAll('.block');
+
+    block.forEach((value, index) => {
+
+      contentTopNavBtn[index].addEventListener('click', () => {
+        let headerHeight = document.querySelector('header.siteHeader').offsetHeight;
+        let blockTop = value.offsetTop + headerHeight;
+        window.scrollTo({
+          top: blockTop,
+          behavior: "smooth",
+        });
+      })
+    })
+
+
+
     gsap.registerPlugin(ScrollTrigger)
-    const contentTopNavBtn = document.querySelectorAll('.contentTopNav a');
 
     gsap.utils.toArray(".block").forEach(box => {
       ScrollTrigger.create({

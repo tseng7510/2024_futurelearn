@@ -1189,7 +1189,7 @@
       border-radius: 8px;
 
       @include screen('tablet') {
-        width: 120px;
+        width: 60px;
       }
     }
   }
@@ -1445,7 +1445,6 @@
 
     @include screen('tablet') {
       max-width: none;
-      padding: 0 20px;
     }
   }
 
@@ -1532,7 +1531,7 @@
     border-top: 1px solid rgba(#FFF, 0.35);
 
     @include screen('tablet') {
-      border-top: 1px solid rgba($mainColor, 0.35);
+      border-top: 1px solid rgba(#FFF, 0.35);
     }
 
     ul {
@@ -2266,6 +2265,8 @@
     }
 
     &:hover {
+      width: 54px;
+      height: 54px;
       box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
 
       &::before {
