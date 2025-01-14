@@ -53,7 +53,7 @@
           <div class="contentTopNav">
             <div class="outer">
               <div class="container">
-                <nav class="wow fadeInUp" data-wow-delay="0s">
+                <nav class="wow fadeInLeft" data-wow-delay="0s">
                   <ul>
                     <li class="active"><a href="news.php">最新消息</a></li>
                     <li><a href="news.php">媒體報導</a></li>

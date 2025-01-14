@@ -52,7 +52,7 @@
           <div class="contentTopNav">
             <div class="outer">
               <div class="container">
-                <nav class="wow fadeInUp" data-wow-delay="0s">
+                <nav class="wow fadeInLeft" data-wow-delay="0s">
                   <ul>
                     <li class="active"><button type="button">願景與使命</button></li>
                     <li><button type="button">實驗教育</button></li>

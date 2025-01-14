@@ -52,7 +52,7 @@
           <div class="contentTopNav">
             <div class="outer">
               <div class="container">
-                <nav class="wow fadeInUp" data-wow-delay="0s">
+                <nav class="wow fadeInLeft" data-wow-delay="0s">
                   <ul>
                     <li class="active"><button>語言</button></li>
                     <li><button>人文</button></li>
