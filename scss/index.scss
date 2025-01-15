@@ -2,13 +2,14 @@
 @use '../scss/partials/shared' as *;
 
 body {
+  overflow: hidden;
 
   &.loaded {
     overflow: visible;
+  }
 
-    .indexVideo {
-      pointer-events: none;
-    }
+  .indexVideo {
+    pointer-events: none;
   }
 }
 

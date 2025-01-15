@@ -1,7 +1,10 @@
+body {
+  overflow: hidden;
+}
 body.loaded {
   overflow: visible;
 }
-body.loaded .indexVideo {
+body .indexVideo {
   pointer-events: none;
 }
 
