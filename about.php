@@ -63,7 +63,7 @@
             </div>
           </div>
 
-          <div class="block block1" id="block1">
+          <div class="block block1 wow fadeInUp" data-wow-delay="0s" id="block1">
             <div class="outer">
               <div class="container">
                 <div class="contentBox">
@@ -104,7 +104,7 @@
             </div>
           </div>
 
-          <div class="block block2" id="block2">
+          <div class="block block2 wow fadeInUp" data-wow-delay="0s" id="block2">
             <div class="outer">
               <div class="container">
                 <div class="contentBox">
@@ -128,7 +128,7 @@
             </div>
           </div>
 
-          <div class="block block3" id="block3">
+          <div class="block block3 wow fadeInUp" data-wow-delay="0s" id="block3">
             <div class="outer">
               <div class="container">
                 <div class="contentBox">
