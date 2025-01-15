@@ -16,7 +16,7 @@
 
     <main class="siteMain" aria-label="main" itemscope>
 
-      <div class="indexVideo"><video src="images/index/logolading.mp4" autoplay muted playsinline controls></video></div>
+      <div class="indexVideo"><video src="images/index/logolading.mp4" autoplay muted playsinline></video></div>
 
       <div class="mainBox">
         <div class="banner">
@@ -137,7 +137,6 @@
         body.classList.add('loaded');
         setTimeout(() => {
           indexVideo.classList.add('loaded');
-          //indexVideo.remove();
         }, 1000);
       }, 4000);
     });
