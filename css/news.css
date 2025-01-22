@@ -1,11 +1,11 @@
 .newsList .contentBox {
   padding-top: 0;
-  border-top: #E5E5E5 1px solid;
 }
 .newsList .contentBox .listBox {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  border-top: #E5E5E5 1px solid;
 }
 .newsList .contentBox .listBox .item {
   border-bottom: #E5E5E5 1px solid;
@@ -58,7 +58,7 @@
   gap: 10px;
   padding-bottom: 40px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .newsList .contentBox .listBox a {
     flex-direction: column;
   }

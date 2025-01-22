@@ -3,12 +3,10 @@
 
 .camp {
 
-  .hasSideOuter {
-    padding-top: 30px;
-    border-top: #E5E5E5 1px solid;
-  }
 
   .hasSide {
+    border-top: #E5E5E5 1px solid;
+    padding-top: 30px;
     display: none !important;
 
     &.active {

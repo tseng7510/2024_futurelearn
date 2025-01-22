@@ -67,10 +67,10 @@
           <div class="outer">
             <div class="container">
               <div class="contentBox">
-                <div class="listBox">
+                <div class="listBox wow fadeInUp" data-wow-delay="0.2s">
 
                   <? for ($i = 0; $i < 6; $i++) { ?>
-                    <div class="item wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="item">
                       <a href="news_detail.php">
                         <div class="info">
                           <time>Nov 12.2024</time>

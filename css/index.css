@@ -210,7 +210,7 @@ section .blockTitle span {
   flex-direction: column;
   gap: 10px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .newsBox .listBox a {
     flex-direction: column;
   }
@@ -344,7 +344,7 @@ section .blockTitle span {
   isolation: isolate;
   padding-bottom: 5%;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .aboutBox .outer {
     padding-bottom: 40px;
   }
@@ -354,7 +354,7 @@ section .blockTitle span {
   margin: 0 auto -120px 0;
   position: relative;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .aboutBox .pic {
     margin: 0 auto -100px 0;
   }

@@ -5,12 +5,12 @@
 .newsList {
   .contentBox {
     padding-top: 0;
-    border-top: #E5E5E5 1px solid;
 
     .listBox {
       position: relative;
       display: flex;
       flex-wrap: wrap;
+      border-top: #E5E5E5 1px solid;
 
       .item {
         border-bottom: #E5E5E5 1px solid;

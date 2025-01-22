@@ -371,7 +371,7 @@ template,
     --contentPadding: 40px;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   :root {
     --contentPadding: 30px;
   }
@@ -548,7 +548,7 @@ button:focus {
 .privacyBox {
   position: fixed;
   background: #000;
-  z-index: 9999;
+  z-index: 99;
   bottom: 0px;
   width: 100%;
   color: #e7e7e7;
@@ -579,7 +579,7 @@ button:focus {
   font-size: 1.125rem;
   color: #535353;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .editor {
     font-size: 1.125rem;
   }
@@ -788,7 +788,7 @@ button:focus {
   right: 0px;
   top: 0;
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1030px) {
   .mobileBtn {
     display: none;
   }
@@ -816,7 +816,7 @@ button:focus {
   transform: translateY(-50%);
   color: #FFF;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .mobileBtn span {
     display: none;
   }
@@ -845,7 +845,7 @@ button:focus {
   z-index: 99;
   background: #fff;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .siteHeader {
     position: fixed;
     top: -1;
@@ -864,7 +864,7 @@ button:focus {
   gap: 20px;
   height: 90px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .siteHeader .headerBox .container {
     height: 50px;
   }
@@ -873,7 +873,7 @@ button:focus {
   line-height: 0;
   margin: 0 auto 0 0;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .siteHeader .logo {
     margin: 0 auto 0 0;
   }
@@ -892,12 +892,12 @@ button:focus {
   }
 }
 
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1030px) {
   .headFix .wrapper {
     padding-top: 67px;
   }
 }
-@media screen and (min-width: 1001px) and (min-width: 1001px) {
+@media screen and (min-width: 1030px) and (min-width: 1030px) {
   .headFix .siteHeader {
     position: fixed;
     top: 0;
@@ -917,12 +917,12 @@ button:focus {
     height: 40px;
   }
 }
-@media screen and (min-width: 1001px) and (min-width: 1001px) and (max-width: 1200px) {
+@media screen and (min-width: 1030px) and (min-width: 1030px) and (max-width: 1200px) {
   .headFix .siteHeader .logo img {
     height: 30px;
   }
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1030px) {
   .headFix .menuBox .mainMenu > ul > li {
     padding: 0;
   }
@@ -934,7 +934,7 @@ button:focus {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .wrapper {
     padding-top: 50px;
   }
@@ -974,7 +974,7 @@ button:focus {
   position: relative;
   margin: 0;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .insidePages .inBanner .title {
     font-size: 2.5rem;
   }
@@ -1001,7 +1001,7 @@ button:focus {
   padding-bottom: 20px;
   margin-bottom: clamp(40px, 5%, 100px);
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .insidePages .navBox {
     display: none;
   }
@@ -1019,7 +1019,7 @@ button:focus {
   line-height: 1.75;
   cursor: pointer;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .insidePages .navBox button {
     display: flex;
     align-items: center;
@@ -1034,7 +1034,7 @@ button:focus {
   transform: rotate(45deg);
   border-width: 0 2px 2px 0;
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1030px) {
   .insidePages .navBox {
     display: flex;
   }
@@ -1049,7 +1049,7 @@ button:focus {
   margin-right: 40px;
   border-right: 1px solid #000;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .insidePages .navBox .title {
     display: none;
   }
@@ -1062,12 +1062,12 @@ button:focus {
   display: none;
   border: #dddddd 1px solid;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .insidePages .navBox nav ul {
     background: #FFF;
   }
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1030px) {
   .insidePages .navBox nav ul {
     display: flex !important;
     flex-direction: row;
@@ -1086,7 +1086,7 @@ button:focus {
   font-weight: 700;
   position: relative;
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1030px) {
   .insidePages .navBox nav ul a {
     height: 100%;
     font-size: 1.3125rem;
@@ -1123,7 +1123,7 @@ button:focus {
   position: relative;
   z-index: 3;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .insidePages .mainBox section {
     padding-top: 50px;
   }
@@ -1140,7 +1140,7 @@ button:focus {
     margin-bottom: 30px;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .insidePages .contentBox .pageTitle {
     margin-bottom: 30px;
   }
@@ -1209,7 +1209,7 @@ button:focus {
   justify-content: space-between;
   gap: 30px;
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1030px) {
   .insidePages .hasSide {
     flex-direction: row;
     gap: 50px;
@@ -1229,7 +1229,7 @@ button:focus {
   z-index: 9;
   width: 100%;
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1030px) {
   .insidePages .hasSide .sideBox {
     width: 180px;
     flex-shrink: 0;
@@ -1251,7 +1251,7 @@ button:focus {
   position: relative;
   border-radius: 10px;
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1030px) {
   .insidePages .hasSide .sideBox > button {
     display: none;
   }
@@ -1277,7 +1277,7 @@ button:focus {
   border: 1px solid #008DB3;
   overflow: hidden;
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1030px) {
   .insidePages .hasSide .sideBox .content {
     display: block !important;
     position: relative;
@@ -1298,7 +1298,7 @@ button:focus {
   isolation: isolate;
   line-height: 1.75;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .insidePages .hasSide .sideBox ul li a,
   .insidePages .hasSide .sideBox ul li button {
     text-align: center;
@@ -1342,7 +1342,7 @@ button:focus {
 .insidePages .hasSide .contentBox {
   position: relative;
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1030px) {
   .insidePages .hasSide .contentBox {
     width: calc(100% - 180px - 50px);
     margin: 0 0 0 auto;
@@ -1357,7 +1357,7 @@ button:focus {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .menuBox {
     position: fixed;
     left: auto;
@@ -1399,7 +1399,7 @@ button:focus {
   align-items: center;
   gap: 25px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .menuBox .mainMenu > ul {
     flex-direction: column;
     border-top: #e3e3e3 1px solid;
@@ -1412,12 +1412,12 @@ button:focus {
 .menuBox .mainMenu > ul > li:nth-last-child(1) {
   display: none;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .menuBox .mainMenu > ul > li:nth-last-child(1) {
     display: block;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .menuBox .mainMenu > ul > li {
     width: 100%;
     padding: 0;
@@ -1434,13 +1434,13 @@ button:focus {
   text-transform: uppercase;
   transition: all 0.3s ease;
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1030px) {
   .menuBox .mainMenu > ul > li > a, .menuBox .mainMenu > ul > li > button {
     display: flex;
     align-items: center;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .menuBox .mainMenu > ul > li > a, .menuBox .mainMenu > ul > li > button {
     font-size: 1.125rem;
     padding: 15px 40px;
@@ -1450,7 +1450,7 @@ button:focus {
 .menuBox .mainMenu > ul > li > a.active, .menuBox .mainMenu > ul > li > a:hover, .menuBox .mainMenu > ul > li > button.active, .menuBox .mainMenu > ul > li > button:hover {
   color: #008DB3;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .menuBox .mainMenu > ul > li > a.active, .menuBox .mainMenu > ul > li > a:hover, .menuBox .mainMenu > ul > li > button.active, .menuBox .mainMenu > ul > li > button:hover {
     color: #fff;
     background: #008DB3;
@@ -1468,7 +1468,7 @@ button:focus {
   background: #BEB9AF;
   border-top: 6px solid #008DB3;
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1030px) {
   .menuBox .mainMenu > ul .full .nextMenuBox {
     position: fixed;
     left: 0;
@@ -1481,7 +1481,7 @@ button:focus {
   display: flex;
   margin: 0 auto;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .menuBox .mainMenu > ul .full .nextMenuBox .menuListBox {
     flex-direction: column;
     padding: 0;
@@ -1495,7 +1495,7 @@ button:focus {
   border-radius: 10px;
   overflow: hidden;
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1030px) {
   .menuBox .nextMenuBox {
     position: absolute;
     top: 100%;
@@ -1520,7 +1520,7 @@ button:focus {
     opacity: 1;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .menuBox .nextMenuBox {
     background: rgba(0, 0, 0, 0.03);
     box-shadow: none;
@@ -1554,7 +1554,7 @@ button:focus {
   transition: all 0.3s ease;
   text-align: center;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .menuBox .nextMenuBox a,
   .menuBox .nextMenuBox button {
     border: none;
@@ -1568,7 +1568,7 @@ button:focus {
 .menuBox .nextMenuBox button:hover {
   color: #008DB3;
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1030px) {
   .menuBox .nextMenuBox a:hover,
   .menuBox .nextMenuBox button:hover {
     color: #FFF;
@@ -1581,7 +1581,7 @@ button:focus {
 .menuBox .nextMenuBox li + li {
   border-top: #fff 1px solid;
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1030px) {
   .menuBox .nextMenuBox .nextMenuBox {
     position: absolute;
     top: 0;
@@ -1599,7 +1599,7 @@ button:focus {
   align-items: center;
   align-self: stretch;
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1030px) {
   .topNav {
     margin-right: 10px;
   }
@@ -1616,7 +1616,7 @@ button:focus {
   border-radius: 50%;
   transition: all 0.3s ease;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .topNav .btn {
     background: none;
   }
@@ -1628,7 +1628,7 @@ button:focus {
   display: block;
   background: #000;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .topNav .btn:hover::before {
     background: #008DB3;
   }
@@ -1636,7 +1636,7 @@ button:focus {
 .topNav span {
   margin: 0 6px 0 0;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .topNav span {
     display: none;
   }
@@ -1675,7 +1675,7 @@ button:focus {
   top: 50%;
   transform: translateY(-50%);
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .topNav {
     right: 50px;
   }
@@ -1707,7 +1707,7 @@ button:focus {
   transform: translateX(-30%);
   animation: hasItem 1s infinite;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .topNav .inquiry .hasItem::after {
     top: 5px;
     transform: translateX(0%);
@@ -1716,7 +1716,7 @@ button:focus {
 .topNav .contact {
   margin: 0 10px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .topNav .contact {
     display: none;
   }
@@ -1728,7 +1728,7 @@ button:focus {
   height: 40px;
   gap: 5px;
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1030px) {
   .topNav .contact a {
     color: #fff;
     background: #008DB3;
@@ -1751,7 +1751,7 @@ button:focus {
           mask: url("../images/icon/icon_mail.svg") center no-repeat;
   background: #FFF;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .topNav .contact a::before {
     background: #000;
   }
@@ -1773,7 +1773,7 @@ button:focus {
   border-radius: 50%;
   background: #008DB3;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .topNav .language button {
     background: none;
   }
@@ -1793,7 +1793,7 @@ button:focus {
   background: #FFF;
   transition: all 0.3s ease;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .topNav .language button::before {
     background: #000;
   }
@@ -1807,7 +1807,7 @@ button:focus {
   border: 1px solid #008DB3;
   border-radius: 8px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .topNav .language ul {
     width: 60px;
   }
@@ -1819,7 +1819,7 @@ button:focus {
   align-items: center;
   justify-content: center;
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1030px) {
   .menuSearch {
     background: #008DB3;
     padding: 0 25px;
@@ -1828,7 +1828,7 @@ button:focus {
 .menuSearch > .btn {
   display: none;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .menuSearch > .btn {
     height: auto;
     display: flex;
@@ -1840,7 +1840,7 @@ button:focus {
   -webkit-mask: url("../images/icon/icon_search.svg") center no-repeat;
           mask: url("../images/icon/icon_search.svg") center no-repeat;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .menuSearch > .btn::before {
     width: 20px;
     height: 20px;
@@ -1858,13 +1858,13 @@ button:focus {
   transition: all 0.3s ease;
   border-radius: 50px;
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1030px) {
   .menuSearch .searchOuter {
     padding: 0 10px;
     background: #fff;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .menuSearch .searchOuter {
     background: #008DB3;
     border-radius: 0px;
@@ -1883,7 +1883,7 @@ button:focus {
   display: none;
   cursor: pointer;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .menuSearch .searchOuter .searchClose {
     display: block;
   }
@@ -1910,7 +1910,7 @@ button:focus {
   height: 30px;
   color: #fff;
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1030px) {
   .menuSearch .searchOuter .searchBox input {
     width: 130px;
     color: #008DB3;
@@ -1941,7 +1941,7 @@ button:focus {
           mask: url("../images/icon/icon_search.svg") center no-repeat;
   background: #008DB3;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .menuSearch .searchOuter .searchBtn::before {
     background: #fff;
   }
@@ -1954,7 +1954,7 @@ button:focus {
   z-index: 10;
   margin-right: 15%;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .breadcrumbBox {
     display: none;
   }
@@ -1969,7 +1969,7 @@ button:focus {
   color: #fff;
   line-height: 1;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .breadcrumbBox .breadcrumb {
     font-size: 14px;
   }
@@ -2027,7 +2027,7 @@ button:focus {
   position: relative;
   z-index: 9;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .footerBox {
     padding: 50px 0 0;
   }
@@ -2035,7 +2035,7 @@ button:focus {
 .footerBox .container {
   display: flex;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .footerBox .container {
     flex-direction: column;
     gap: 30px;
@@ -2048,7 +2048,7 @@ button:focus {
   flex-direction: column;
   gap: 20px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .footerBox .footerSide {
     max-width: none;
   }
@@ -2074,7 +2074,7 @@ button:focus {
   overflow: hidden;
   transition: all 0.3s ease;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .footerBox .shareBox ul a {
     width: 36px;
     height: 36px;
@@ -2105,7 +2105,7 @@ button:focus {
   -webkit-mask: url("../images/icon/icon_wechat.svg") center no-repeat;
           mask: url("../images/icon/icon_wechat.svg") center no-repeat;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .footerBox .shareBox ul li .wechat::before {
     width: 24px;
     height: 24px;
@@ -2128,7 +2128,7 @@ button:focus {
   margin-top: 10px;
   border-top: 1px solid rgba(255, 255, 255, 0.35);
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .footerBox .infoBox {
     border-top: 1px solid rgba(255, 255, 255, 0.35);
   }
@@ -2138,7 +2138,7 @@ button:focus {
   flex-direction: column;
   gap: 15px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .footerBox .infoBox ul {
     max-width: 290px;
     margin: 0 auto;
@@ -2191,7 +2191,7 @@ button:focus {
   justify-content: space-between;
   border-left: 1px solid rgba(255, 255, 255, 0.35);
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .footerBox .footerMenu {
     padding-left: 0;
     margin-left: 0;
@@ -2207,7 +2207,7 @@ button:focus {
   justify-content: space-between;
   gap: 40px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .footerBox .menuBox {
     display: none;
   }
@@ -2246,7 +2246,7 @@ button:focus {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.8);
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .footerBox .copyright {
     margin: 0 calc(var(--contentPadding) * -1);
     padding: 20px;
@@ -2266,7 +2266,7 @@ button:focus {
   color: white;
   margin-left: 0;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .footerBox .copyright a {
     margin-left: 0;
   }
@@ -2278,7 +2278,7 @@ button:focus {
 .pageBox {
   margin-top: 50px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .pageBox {
     padding-top: 30px;
     margin-top: 30px;
@@ -2290,7 +2290,7 @@ button:focus {
   align-items: center;
   gap: 5px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .pageBox .pagination {
     gap: 5px;
   }
@@ -2312,7 +2312,7 @@ button:focus {
   border: 1px solid transparent;
   transition: all 0.3s ease;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .pageBox .pagination li a {
     width: 30px;
     height: 30px;
@@ -2331,7 +2331,7 @@ button:focus {
 .pageBox .pagination li.controls:first-child {
   margin: 0 10px 0 0;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .pageBox .pagination li.controls:first-child {
     margin: 0 10px 0 0;
   }
@@ -2339,7 +2339,7 @@ button:focus {
 .pageBox .pagination li.controls:last-child {
   margin: 0 0 0 10px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .pageBox .pagination li.controls:last-child {
     margin: 0 0 0 10px;
   }
@@ -2670,7 +2670,7 @@ button:focus {
     margin: 40px 0 0;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
   .pageBtnBox {
     margin: 30px 0 0;
   }
