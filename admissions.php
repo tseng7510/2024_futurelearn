@@ -51,7 +51,7 @@
           <div class="outer">
             <div class="container hasSide">
 
-              <aside class="sideBox wow fadeInUp" data-wow-delay="0s">
+              <aside class="sideBox wow fadeInLeft" data-wow-delay="0s">
                 <button type="button"><span>Menu</span></button>
                 <div class="content">
                   <ul>

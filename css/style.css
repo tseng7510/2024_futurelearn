@@ -1511,6 +1511,10 @@ button:focus {
     transform-origin: right;
     opacity: 0;
   }
+  .menuBox .nextMenuBox.active {
+    display: block;
+    animation: menuUse 0.3s ease-in-out forwards;
+  }
   .menuBox .nextMenuBox.active::before {
     transform: scaleX(1);
     transition-delay: 0.25s;
@@ -1526,10 +1530,6 @@ button:focus {
     box-shadow: none;
     border-radius: 0;
   }
-}
-.menuBox .nextMenuBox.active {
-  display: block;
-  animation: menuUse 0.3s ease-in-out forwards;
 }
 @keyframes menuUse {
   0% {

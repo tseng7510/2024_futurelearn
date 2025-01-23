@@ -872,6 +872,9 @@
       }
 
       &.active {
+        display: block;
+        animation: menuUse 0.3s ease-in-out forwards;
+
         &::before {
           transform: scaleX(1);
           transition-delay: .25s;
@@ -888,11 +891,6 @@
       background: rgba(#000, 0.03);
       box-shadow: none;
       border-radius: 0;
-    }
-
-    &.active {
-      display: block;
-      animation: menuUse 0.3s ease-in-out forwards;
     }
 
     @keyframes menuUse {

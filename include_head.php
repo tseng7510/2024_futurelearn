@@ -1,5 +1,6 @@
 <meta charset="utf-8">
 <title>學無界 FUTURELEARN</title>
+<meta name="robots" content="noindex, nofollow" />
 <link rel="alternate" hreflang="x-default" href="#" />
 <link rel="alternate" hreflang="en" href="#" />
 <link rel="canonical" href="#" />

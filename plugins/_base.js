@@ -1,4 +1,4 @@
-const setWidth = 1000;
+const setWidth = 1030;
 
 $(function () {
   sliderDown('.language');
@@ -184,6 +184,7 @@ $('.siteHeader .headerBox .container').append('<button type="button" class="mobi
       $(this).siblings('.nextMenuBox').slideToggle(300);
       $(this).toggleClass('active');
       $(this).parent().siblings().find('.nextMenuBox').slideUp(300);
+      $(this).parent().siblings().find('a').removeClass('active');
     }
   });
 })();
@@ -218,7 +219,7 @@ function sliderUse(elem) {
   let parentBoxWidth;
   let sliderMovePx;
   let request;
-  let cloneElem = document.querySelector(elem).innerHTML;
+  let cloneElem = document.querySelector(elem)?.innerHTML;
 
   document.querySelector(elem).insertAdjacentHTML('afterbegin', cloneElem);
   document.querySelector(elem).insertAdjacentHTML('afterbegin', cloneElem);

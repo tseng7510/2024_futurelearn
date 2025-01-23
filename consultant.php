@@ -103,49 +103,6 @@
     <?php include('include_footer.php'); ?>
   </div>
   <?php include('include_body_bottom.php'); ?>
-  <script type="text/javascript" src="plugins/gsap.min.js"></script>
-  <script type="text/javascript" src="plugins/ScrollTrigger.min.js"></script>
-  <script type="text/javascript">
-    const block1Swiper = new Swiper('.block1Swiper .swiper', {
-      loop: true,
-      slidesPerView: 1,
-    });
-    const block3Swiper = new Swiper('.block3Swiper .swiper', {
-      spaceBetween: 20,
-      slidesPerView: 1,
-    });
-
-    sliderUse('.block2 .picBox')
-
-    gsap.registerPlugin(ScrollTrigger)
-    const contentTopNavBtn = document.querySelectorAll('.contentTopNav a');
-
-    const block1 = document.querySelector('.block1');
-    const blockTop = block1.getBoundingClientRect().top;
-
-    window.addEventListener('resize', () => blockTop = block1.getBoundingClientRect().top);
-
-    const block = gsap.utils.toArray('.block');
-    block.forEach(box => {
-      gsap.to(box, {
-        scrollTrigger: {
-          trigger: box,
-          toggleClass: "active",
-          start: `-${blockTop - 50} center`,
-          end: `bottom center`,
-          scrub: true,
-          onEnter: myEnterFunc,
-          onEnterBack: myEnterFunc,
-        }
-      })
-    });
-
-    function myEnterFunc(value) {
-      const index = value.vars.trigger.childElementCount;
-      contentTopNavBtn.forEach((value, index) => value.parentNode.classList.remove('active'));
-      contentTopNavBtn[index - 1].parentNode.classList.add('active');
-    }
-  </script>
 </body>
 
 </html>
