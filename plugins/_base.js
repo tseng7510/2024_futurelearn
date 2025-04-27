@@ -215,23 +215,27 @@ function faq(q, a) {
   });
 }
 
-function sliderUse(elem) {
-  let parentBoxWidth;
+function sliderUse(elem, duration = 1, invert = false) {
+  let _this = document.querySelector(elem);
+  let itemWidth;
   let sliderMovePx;
   let request;
-  let cloneElem = document.querySelector(elem)?.innerHTML;
-
-  document.querySelector(elem).insertAdjacentHTML('afterbegin', cloneElem);
-  document.querySelector(elem).insertAdjacentHTML('afterbegin', cloneElem);
 
   function requestAnimation() {
-    parentBoxWidth = document.querySelector(`${elem} .listBox`).offsetWidth;
+    itemWidth = _this.children[0].clientWidth;
+    let checkWidth = itemWidth;
 
-    sliderMovePx = 0;
-
-    cancelAnimationFrame(request);
-    if (window.innerWidth < parentBoxWidth * 3) {
-      requestAnimationFrame(animation);
+    switch (itemWidth < _this.clientWidth) {
+      case true:
+        for (let i = checkWidth; i < _this.clientWidth * 2; i = i + checkWidth) {
+          let cloneElem = _this.children[0].cloneNode(true);
+          _this.insertAdjacentElement('afterbegin', cloneElem);
+        }
+      case false:
+        sliderMovePx = 0;
+        cancelAnimationFrame(request);
+        requestAnimationFrame(animation);
+        break;
     }
   }
 
@@ -239,11 +243,17 @@ function sliderUse(elem) {
   window.addEventListener('resize', requestAnimation);
 
   function animation() {
-    sliderMovePx++;
+    sliderMovePx = sliderMovePx + duration;
 
-    if (sliderMovePx < parentBoxWidth) {
-      document.querySelectorAll(`${elem} .listBox`).forEach((value, index) => (value.style.transform = `translateX(-${sliderMovePx * 0.5}px)`));
-      request = requestAnimationFrame(animation);
+    if (sliderMovePx < itemWidth) {
+      if (!invert) {
+        _this.querySelectorAll(`.listBox`).forEach((value, index) => (value.style.transform = `translateX(-${sliderMovePx}px)`));
+        request = requestAnimationFrame(animation);
+      } else {
+        _this.style.justifyContent = 'flex-end';
+        _this.querySelectorAll(`.listBox`).forEach((value, index) => (value.style.transform = `translateX(${sliderMovePx}px)`));
+        request = requestAnimationFrame(animation);
+      }
     } else {
       sliderMovePx = 0;
       request = requestAnimationFrame(animation);
