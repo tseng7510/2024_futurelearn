@@ -5,42 +5,42 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  border-top: #E5E5E5 1px solid;
+  border-top: #e5e5e5 1px solid;
 }
 .newsList .contentBox .listBox .item {
-  border-bottom: #E5E5E5 1px solid;
+  border-bottom: #e5e5e5 1px solid;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 @media screen and (min-width: 500px) {
   .newsList .contentBox .listBox .item {
-    border-left: #E5E5E5 1px solid;
+    border-left: #e5e5e5 1px solid;
   }
 }
 @media screen and (max-width: 767px) and (min-width: 500px) {
   .newsList .contentBox .listBox .item {
     width: 50%;
   }
-  .newsList .contentBox .listBox .item:nth-child(2n+1) {
+  .newsList .contentBox .listBox .item:nth-child(2n + 1) {
     border-left: none;
     padding-right: 30px;
   }
-  .newsList .contentBox .listBox .item:nth-child(2n+2) {
+  .newsList .contentBox .listBox .item:nth-child(2n + 2) {
     padding-left: 30px;
   }
 }
 @media screen and (min-width: 767px) {
-  .newsList .contentBox .listBox .item:nth-child(3n+1) {
+  .newsList .contentBox .listBox .item:nth-child(3n + 1) {
     border-left: none;
     padding-right: 30px;
     width: calc((100% - 120px) / 3 + 30px);
   }
-  .newsList .contentBox .listBox .item:nth-child(3n+2) {
+  .newsList .contentBox .listBox .item:nth-child(3n + 2) {
     padding-left: 30px;
     padding-right: 30px;
     width: calc((100% - 120px) / 3 + 60px);
   }
-  .newsList .contentBox .listBox .item:nth-child(3n+3) {
+  .newsList .contentBox .listBox .item:nth-child(3n + 3) {
     padding-left: 30px;
     width: calc((100% - 120px) / 3 + 30px);
   }
@@ -57,6 +57,7 @@
   position: relative;
   gap: 10px;
   padding-bottom: 40px;
+  text-decoration: none;
 }
 @media screen and (max-width: 1029px) {
   .newsList .contentBox .listBox a {
@@ -70,7 +71,7 @@
 }
 .newsList .contentBox .listBox .pic img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: all 25s ease;
 }
 .newsList .contentBox .listBox .info {
@@ -92,7 +93,7 @@
   font-weight: 500;
 }
 .newsList .contentBox .listBox .tag {
-  color: #008DB3;
+  color: #008db3;
   font-size: 15px;
 }
 .newsList .contentBox .listBox .description {
@@ -106,7 +107,7 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  color: #008DB3;
+  color: #008db3;
   font-size: 13px;
   opacity: 0;
   transition: all 0.3s ease;
@@ -116,13 +117,13 @@
   font-weight: 600;
 }
 .newsList .contentBox .listBox .more::after {
-  content: "";
+  content: '';
   width: 13px;
   height: 10px;
   display: block;
-  -webkit-mask: url("../images/icon/icon_arrow_more.svg") center no-repeat;
-          mask: url("../images/icon/icon_arrow_more.svg") center no-repeat;
-  background: #008DB3;
+  -webkit-mask: url('/images/common/icon/icon_arrow_more.svg') center no-repeat;
+  mask: url('/images/common/icon/icon_arrow_more.svg') center no-repeat;
+  background: #008db3;
 }
 
 .newsDetail .contentBox .pageTitle {
@@ -136,7 +137,7 @@
   font-weight: 600;
 }
 .newsDetail .contentBox .pageTitle::before {
-  content: "";
+  content: '';
   width: 8px;
   height: 34px;
   display: block;
@@ -150,7 +151,7 @@
   isolation: isolate;
 }
 .newsDetail .contentBox .editorOuter::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -174,6 +175,6 @@
   font-weight: 500;
 }
 .newsDetail .contentBox .tag {
-  color: #008DB3;
+  color: #008db3;
   font-size: 15px;
-}/*# sourceMappingURL=news.css.map */
+} /*# sourceMappingURL=news.css.map */

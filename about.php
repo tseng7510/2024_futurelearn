@@ -217,9 +217,9 @@
     const block1Swiper = new Swiper('.block1Swiper .swiper', {
       loop: true,
       slidesPerView: 1,
-      autoplay: {
-        delay: 3000,
-      },
+      // autoplay: {
+      //   delay: 3000,
+      // },
     });
 
     const block3Swiper = new Swiper('.block3Swiper .swiper', {

@@ -186,7 +186,7 @@
   width: 13px;
   height: 13px;
   display: block;
-  background: url("../images/icon/icon_arrow.svg") center no-repeat;
+  background: url("/images/common/icon/icon_arrow.svg") center no-repeat;
   filter: invert(1);
 }
 .solutionDetail .swiperArrow.swiper-button-next {
