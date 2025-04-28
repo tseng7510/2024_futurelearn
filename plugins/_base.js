@@ -224,8 +224,9 @@ function sliderUse(elem, duration = 1, invert = false) {
   function requestAnimation() {
     itemWidth = _this.children[0].clientWidth;
     let checkWidth = itemWidth;
+    console.log(itemWidth, _this.clientWidth);
 
-    switch (itemWidth < _this.clientWidth) {
+    switch (itemWidth < _this.clientWidth * 2) {
       case true:
         for (let i = checkWidth; i < _this.clientWidth * 2; i = i + checkWidth) {
           let cloneElem = _this.children[0].cloneNode(true);
